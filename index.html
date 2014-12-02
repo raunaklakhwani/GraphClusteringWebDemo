@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="next-blue.css">
+    <link rel="stylesheet" href="next-topology.css">
+    <script src="next.js"></script>
+    <script src="next-topology.js"></script>
+
+    <style>
+        .main {
+            background : grey;
+            height : 100%;
+            width: 100%;
+        }
+        .sampleData {
+            float : left;
+            margin : 2px;
+            border : 2px solid black;
+            background : white;
+            height : 100%;
+            width: 48%;
+        }
+        .clusteredData {
+            float : left;
+            margin : 2px;
+            border : 2px solid black;
+            background : white;
+            height : 100%;
+            width: 49%;
+        }
+        .buttonClass{
+            cursor:pointer;
+            min-height:30px;
+            position:relative;
+
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 4px 8px;margin-left:20px;
+
+            font:12pt Calibri bold;
+            font-variant:small-caps;
+            color: #fff;
+            text-shadow: 0 0 0;
+            outline: 0;
+            letter-spacing: 2px;
+
+            text-shadow: 0 1px 4px #111;
+            /*box-shadow*/
+            box-shadow: 0 1px 4px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.2), inset 0 -1px 1px rgba(255,255,255,.1);
+            /*linear-gradient*/
+            background: linear-gradient(#333,#666);
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <div class="sampleData">
+            <p>Left</p>
+        </div>
+        <div style = "float:left; margin-left : 2px; margin-right : 2px;">
+            <input type="button" style="width:2em;" value = "CLUSTER" class = "buttonClass"/>
+        </div>
+        <div class="clusteredData">
+            <p>Right</p>
+        </div>
+    </div>
+
+</body>
+</html>
